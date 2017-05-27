@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="ProjectStyleSheet.css" rel="stylesheet" />
+    <script src="project1.js"></script>
+
+
+</head>
+<body>
+    <h1 id="author">
+        Name: Obinna Mogbogu <br />
+        Project Focus: HTML, CSS, JavaScript <br />
+        Period: May, 2017
+    </h1>
+    <h1>No. 1</h1>
+    <fieldset>
+        <input type="submit" id="showDateButton" onclick="showDate()" value="Show day" />
+        <p id="showDate">Click button to show the current date</p>
+
+        <input type="submit" id="showTimeButton" onclick="showTime()" value="Show time" />
+        <p id="showTime">Click button to show the current time</p>
+    </fieldset>
+    
+
+    <h1>No. 2</h1>
+    <fieldset>
+        <input type="submit" onclick="showCurrentDateFormat1()" value="Format: mm-dd-yyyy" />
+        <input type="submit" onclick="showCurrentDateFormat2()" value="Format: mm/dd/yyyy" />
+        <input type="submit" onclick="showCurrentDateFormat3()" value="Format: dd-mm-yyyy" />
+        <input type="submit" onclick="showCurrentDateFormat4()" value="Format: dd/mm/yyyy" />
+        <p id="currentDate">Click button to show the current date</p>
+    </fieldset>
+
+
+    <h1>No. 3</h1>
+    <fieldset>
+        <table>
+            <tr>
+                <td>1st Number : </td>
+                <td>
+                    <input type="text" id="num1" value="" /></td>
+            </tr>
+            <tr>
+                <td>2nd Number : </td>
+                <td>
+                    <input type="text" id="num2" value="" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="multiply" id="buttonPressed1" onclick="calculate('buttonPressed1', 'num1', 'num2')" /></td>
+                <td>
+                    <input type="submit" value="divide" id="buttonPressed2" onclick="calculate('buttonPressed2', 'num1', 'num2')" /></td>
+            </tr>
+        </table>
+
+        <span id="resultArithmetic"></span>
+    </fieldset>
+
+    <h1>No. 4</h1>
+    <fieldset>
+        <input type="submit" value="Get page URL" onclick="returnURL()" />
+        <br />
+        <span id="loadedPageURL"></span>
+    </fieldset>
+
+
+    <h1>No. 5</h1>
+    <fieldset>
+        Enter number :
+    <input type="text" id="inputValue" />
+        <input type="submit" value="Reverse number" onclick="reverseCharacter('inputValue')" />
+        <br />
+        <span id="originalValue"></span>
+        <br />
+        <span id="reversedValue"></span>
+    </fieldset>
+
+
+    <h1>No. 6</h1>
+    <fieldset>
+        <table>
+            <tr>
+                <td class="auto-style1">
+                    <input type="submit" value="Second Largest" onclick="secondLargest()" /></td>
+                <td class="auto-style1">
+                    <input type="submit" value="Second Lowest" onclick="secondLowest()" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style1"><span id="secondLargest"></span></td>
+                <td class="auto-style1"><span id="secondLowest"></span></td>
+            </tr>
+        </table>
+    </fieldset>
+
+
+    <h1>No. 7</h1>
+    <fieldset>
+        <input type="text" id="start" value="" />
+        <br />
+        <input type="text" id="finish" value="" />
+        <input type="submit" value="Range Display" onclick="getRange('start', 'finish')" />
+        <br />
+        <p id="resultRange"></p>
+    </fieldset>
+
+
+    <h1>No. 8</h1>
+    <fieldset>
+        <strong>[34,7,23,32,5,62]</strong>
+        <br />
+        Click the button below to sort the array elements shown above in ascending order (Lowest to Highest)
+    <br />
+        <br />
+        <input type="submit" value="Sort Array in Ascending Order" onclick="sortArray()" />
+        <br />
+        Array sort result: 
+    <br />
+        <span id="arraySortResult"></span>
+    </fieldset>
+
+    <h1>No. 9</h1>
+    <fieldset>
+        Sample : -5, -2, -6, 0, -1 
+    <br />
+        Click the button below to determine the largest number in the sample shown above.
+    <br />
+        <br />
+        <input type="submit" value="Largest number" onclick="getLargestElement()" />
+        <br />
+        <span id="findLargestResult"></span>
+    </fieldset>
+
+
+    <h1>No. 10</h1>
+    <fieldset>
+        Enter Number :
+        <input type="text" value="" id="NaN" />
+        <br />
+        <input type="submit" value="isNaN ?" onclick="NaNCheck('NaN')" />
+        <br />
+        <span id="NaNTypeCheckResult"></span>
+    </fieldset>
+
+
+    <h1>No. 11</h1>
+    <fieldset>
+        Determine whether given value types are the same or not.
+    <br />
+        <br />
+        Sample :
+    <br />
+        var a = [1, 2, 3, 4];
+    <br />
+        var a2 = '1, 2, 3, 4';
+    <br />
+        <br />
+        <input type="submit" value="Same Type ?" onclick="compareTypes()" />
+        <span id="resultOfValueTypes"></span>
+    </fieldset>
+
+</body>
+</html>
